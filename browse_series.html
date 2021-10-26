@@ -37,11 +37,16 @@
 	}</style>
   
   <script>
+     
+  function rand(min, max) {
+  	return Math.random() * (max - min) + min;
+    }
+	  
     function next(){
     
-        document.getElementById('img1').src = "https://cardanospin.github.io/da7f81f760f9/234.png";
-        document.getElementById('img2').src = "https://cardanospin.github.io/da7f81f760f9/234.png";
-        document.getElementById('img3').src = "https://cardanospin.github.io/da7f81f760f9/234.png";
+        document.getElementById('img1').src = "https://cardanospin.github.io/da7f81f760f9/" + rand(1,1000) + ".png";
+        document.getElementById('img2').src = "https://cardanospin.github.io/da7f81f760f9/" + rand(1,1000) + ".png";
+        document.getElementById('img3').src = "https://cardanospin.github.io/da7f81f760f9/" + rand(1,1000) + ".png";
           
     
     }
@@ -55,15 +60,15 @@
   <body>
     
     <img id="img1" src="https://cardanospin.github.io/da7f81f760f9/234.png" />
-    <br/>
+    <br/><br/>
     
     <img id="img2" src="https://cardanospin.github.io/da7f81f760f9/230.png" />
-    <br/>
+    <br/><br/>
     
     <img  id="img3" src="https://cardanospin.github.io/da7f81f760f9/229.png" />
-    <br/>
+    <br/><br/>
     
-    <button onClick="next();" class="myButton">Again...</button>
+    <button onClick="next();" class="myButton">Show 3 Random...</button>
     
   </body>
 </html>
